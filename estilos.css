@@ -7,6 +7,24 @@ body {
     margin: 0 auto;
 }
 
+.disclaimer {
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: yellow;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+@media print {
+    .disclaimer {
+        display: none;
+    }
+}
+
 label {
     display: block;
     margin: 12px 0;
