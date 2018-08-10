@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testando impressão</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Meu formulário</h1>
+    </header>
+    <main>
+        <form>
+            <div class="linha">
+                <label for="nome">Nome:
+                    <input id="nome" placeholder="Informe seu nome" name="nome">
+                </label>
+                <label for="cpf">CPF:
+                    <input id="cpf" placeholder="CPF" name="cpf">
+                </label>
+                <label for="data-de-nascimento">Data de nascimento:
+                    <input id="data-de-nascimento" name="data-de-nascimento">
+                </label>
+            </div>
+            <label for="porque">Por que você quer o subsídio?
+                <textarea rows="6" id="porque"></textarea>
+            </label>
+            
+            <!-- Parece que o segredo reside em criar uma <div> vazia com uma classe que vá contemplar, no CSS, a propriedade "page-break-before" com valor "always". Daí é só utilizar essa <div> no documento onde você achar que for necessário.
+                
+            Ah, claro... não se esqueça de usar @media all e @media print. Olhando a folha de estilos deste projeto, dá pra entender melhor o que fazer.-->
+            <div class="page-break"></div>
+            
+            <label for="retorno">Qual retorno você acredita que terá com o subsídio?
+                <textarea rows="6" id="retorno"></textarea>
+            </label>
+
+            <label for="motivos">Cite 4 motivos para receber o subsídio:
+                <textarea rows="6" id="motivos"></textarea>
+            </label>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 12px 0;
+}
+
+textarea {
+    display: block;
+    margin-top: 8px;
+    width: 600px;
+    height: auto;
+    border: 1px solid black;
+}
+
+input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+div.linha {
+    display: flex;
+    width: 100%;
+}
+
+div.linha label {
+    margin-right: 12px;
+}
+
+/*O que nos interessa tá aqui embaixo:*/
+
+@media all {
+    .page-break {
+        display: none;
+    }
+}
+@media print {
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+}
